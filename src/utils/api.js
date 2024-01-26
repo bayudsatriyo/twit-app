@@ -1,7 +1,6 @@
 function getAccessToken() {
   return localStorage.getItem('accessToken');
 }
-
 const api = (() => {
   const BASE_URL = 'https://openspace-api.netlify.app/v1';
 

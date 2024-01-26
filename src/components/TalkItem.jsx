@@ -28,15 +28,15 @@ function TalkItem({
   return (
     <div role="button" tabIndex={0} className="talk-item" onClick={onTalkClick} onKeyDown={onTalkPress}>
       <div className="talk-item__user-photo">
-        <img src={user.photo} alt={user} />
+        <img src={user?.photo} alt={user} />
       </div>
       <div className="talk-item__detail">
         <header>
           <div className="talk-item__user-info">
-            <p className="talk-item__user-name">{user.name}</p>
+            <p className="talk-item__user-name">{user?.name}</p>
             <p className="talk-item__user-id">
               @
-              {user.id}
+              {user?.id}
             </p>
           </div>
           <p className="talk-item__created-at">{postedAt(createdAt)}</p>
